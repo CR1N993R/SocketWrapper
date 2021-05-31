@@ -1,6 +1,5 @@
 package ch.fenix.serverwrapper;
 
-
 import ch.fenix.basesocketwrapper.BaseConnection;
 import ch.fenix.serverwrapper.interfaces.DisconnectListener;
 
