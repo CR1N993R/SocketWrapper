@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BaseSocketWrapper/BaseSocketWrapper.iml" filepath="$PROJECT_DIR$/BaseSocketWrapper/BaseSocketWrapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ClientWrapper/ClientWrapper.iml" filepath="$PROJECT_DIR$/ClientWrapper/ClientWrapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ServerWrapper/ServerWrapper.iml" filepath="$PROJECT_DIR$/ServerWrapper/ServerWrapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/SocketWrapper.iml" filepath="$PROJECT_DIR$/SocketWrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-socket-wrapper/base-socket-wrapper.iml" filepath="$PROJECT_DIR$/base-socket-wrapper/base-socket-wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-wrapper/client-wrapper.iml" filepath="$PROJECT_DIR$/client-wrapper/client-wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-wrapper/server-wrapper.iml" filepath="$PROJECT_DIR$/server-wrapper/server-wrapper.iml" />
     </modules>
   </component>
 </project>

@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ServerWrapper" />
-        <module name="ClientWrapper" />
-        <module name="BaseSocketWrapper" />
+        <module name="client-wrapper" />
+        <module name="server-wrapper" />
+        <module name="base-socket-wrapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BaseSocketWrapper" target="16" />
+      <module name="base-socket-wrapper" target="16" />
+      <module name="client-wrapper" target="16" />
       <module name="ClientWrapper" target="16" />
+      <module name="server-wrapper" target="16" />
       <module name="ServerWrapper" target="16" />
       <module name="SocketWrapper" target="16" />
     </bytecodeTargetLevel>

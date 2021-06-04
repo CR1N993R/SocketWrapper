@@ -11,7 +11,7 @@ public class Connection extends BaseConnection {
     private String group;
 
     public Connection(Socket socket, DisconnectListener disconnectListener) throws IOException {
-        super(socket, new PrintStream(socket.getOutputStream()), new BufferedReader(new InputStreamReader(socket.getInputStream())));
+        super(socket);
         this.disconnectListener = disconnectListener;
     }
 

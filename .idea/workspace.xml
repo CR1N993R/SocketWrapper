@@ -5,12 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80fb9954-866a-4867-98c2-c541eaca9bb4" name="Default Changelist" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-wrapper/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-wrapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-wrapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/BaseSocketWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/base-socket-wrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/src/main/java/ch/fenix/basesocketwrapper/BaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/src/main/java/ch/fenix/basesocketwrapper/BaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/src/main/java/ch/fenix/basesocketwrapper/MsgListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/src/main/java/ch/fenix/basesocketwrapper/MsgListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/src/main/java/ch/fenix/basesocketwrapper/interfaces/MsgEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/src/main/java/ch/fenix/basesocketwrapper/interfaces/MsgEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseSocketWrapper/src/main/java/ch/fenix/basesocketwrapper/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-socket-wrapper/src/main/java/ch/fenix/basesocketwrapper/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientWrapper/ClientWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/server-wrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientWrapper/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientWrapper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientWrapper/src/main/java/ch/fenix/clientwrapper/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-wrapper/src/main/java/ch/fenix/clientwrapper/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientWrapper/src/test/java/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-wrapper/src/test/java/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/ServerWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client-wrapper/client-wrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/src/main/java/ch/fenix/serverwrapper/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/src/main/java/ch/fenix/serverwrapper/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/src/main/java/ch/fenix/serverwrapper/ServerSocketWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/src/main/java/ch/fenix/serverwrapper/ServerSocketWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/src/main/java/ch/fenix/serverwrapper/interfaces/ConnectionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/src/main/java/ch/fenix/serverwrapper/interfaces/ConnectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/src/main/java/ch/fenix/serverwrapper/interfaces/DisconnectListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/src/main/java/ch/fenix/serverwrapper/interfaces/DisconnectListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerWrapper/src/test/java/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-wrapper/src/test/java/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SocketWrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SocketWrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,17 +59,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/base-socket-wrapper/src/main/java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.152439" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.side.proportion" value="0.2712975" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DEV\Java\Libaries\SocketWrapper\base-socket-wrapper\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DEV\Java\Libaries\SocketWrapper\base-socket-wrapper\src\main\java" />
+      <recent name="E:\DEV\Java\Libaries\SocketWrapper\base-socket-wrapper" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration name="ServerMain" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="MAIN_CLASS_NAME" value="ServerMain" />
+      <module name="server-wrapper" />
+      <target name="WSL - Ubuntu" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -45,6 +100,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="base-socket-wrapper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="base-socket-wrapper" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServerMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,7 +127,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622478936117</updated>
-      <workItem from="1622478937337" duration="2629000" />
+      <workItem from="1622478937337" duration="3150000" />
+      <workItem from="1622482834107" duration="1780000" />
+      <workItem from="1622534001505" duration="2284000" />
+      <workItem from="1622560578418" duration="1564000" />
+      <workItem from="1622575105949" duration="300000" />
+      <workItem from="1622575421081" duration="74000" />
+      <workItem from="1622575573826" duration="1522000" />
+      <workItem from="1622659213149" duration="3968000" />
+      <workItem from="1622747850055" duration="323000" />
+      <workItem from="1622748185949" duration="122000" />
+      <workItem from="1622748318515" duration="223000" />
+      <workItem from="1622748566003" duration="2211000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1622479402098</created>
@@ -70,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622480836547</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1622482294587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622482294587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +177,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

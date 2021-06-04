@@ -12,16 +12,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseConnection {
-    private final Socket socket;
-    private final BufferedReader reader;
-    private final PrintStream printStream;
+    protected Socket socket;
+    private BufferedReader reader;
+    private PrintStream printStream;
     private final List<MsgListener> listeners = new ArrayList<>();
     protected boolean running;
 
-    protected BaseConnection(Socket socket, PrintStream printStream, BufferedReader reader){
+    protected BaseConnection(Socket socket) throws IOException {
         this.socket = socket;
-        this.reader = reader;
-        this.printStream = printStream;
+        this.reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        this.printStream = new PrintStream(socket.getOutputStream());
         start();
     }
 

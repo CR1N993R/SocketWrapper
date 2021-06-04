@@ -3,10 +3,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/BaseSocketWrapper/pom.xml" />
-        <option value="$PROJECT_DIR$/ClientWrapper/pom.xml" />
-        <option value="$PROJECT_DIR$/ServerWrapper/pom.xml" />
+        <option value="$PROJECT_DIR$/server-wrapper/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/client-wrapper/pom.xml" />
+        <option value="$PROJECT_DIR$/base-socket-wrapper/pom.xml" />
       </list>
     </option>
   </component>
