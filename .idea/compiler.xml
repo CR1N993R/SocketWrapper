@@ -12,12 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="base-socket-wrapper" target="16" />
-      <module name="client-wrapper" target="16" />
-      <module name="ClientWrapper" target="16" />
-      <module name="server-wrapper" target="16" />
-      <module name="ServerWrapper" target="16" />
-      <module name="SocketWrapper" target="16" />
+      <module name="base-socket-wrapper" target="8" />
+      <module name="client-wrapper" target="8" />
+      <module name="server-wrapper" target="8" />
+      <module name="SocketWrapper" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,7 +1,6 @@
 package ch.fenix.basesocketwrapper;
 
 import ch.fenix.basesocketwrapper.interfaces.MsgEventListener;
-import ch.fenix.basesocketwrapper.util.Util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,10 +10,16 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *  @author CR1N993R
+ *
+ * This class is the base connection class
+ * It has all the basic functions to wrap the java socket
+ */
 public abstract class BaseConnection {
     protected Socket socket;
-    private BufferedReader reader;
-    private PrintStream printStream;
+    private final BufferedReader reader;
+    private final PrintStream printStream;
     private final List<MsgListener> listeners = new ArrayList<>();
     protected boolean running;
 
@@ -32,11 +37,17 @@ public abstract class BaseConnection {
         start();
     }
 
+    /**
+     * Starts a new Thread which listens for incoming messages
+     */
     private void start(){
         running = true;
         new Thread(this::threadTask).start();
     }
 
+    /**
+     * This method is the task that the thread executes
+     */
     private void threadTask() {
         while (running){
             try {
@@ -49,11 +60,19 @@ public abstract class BaseConnection {
         }
     }
 
+    /**
+     * This method is called when the socket is closed
+     */
     protected void disconnected(){
         running = false;
         sendToListeners("disconnect", "");
     }
 
+    /**
+     * This message will be called after a message was received and sends it to all listeners
+     * @param type the event type
+     * @param msg the message
+     */
     protected void sendToListeners(String type, String msg){
         for (MsgListener listener : listeners) {
             if (listener.getType().equals(type)){
@@ -62,24 +81,39 @@ public abstract class BaseConnection {
         }
     }
 
-
+    /**
+     * Sends a message to the client or the server
+     * @param event the event type
+     * @param msg the message
+     */
     public void emit(String event, String msg){
-        Util.notNull(event,msg);
         event = event.replace("|", "");
         printStream.println(event + "|" + msg);
     }
 
+    /**
+     * Closes the socket
+     * @throws IOException The socket.close throws an exception
+     */
     public void close() throws IOException {
         socket.close();
         running = false;
     }
 
+    /**
+     * Adds an event listener which is called when an message is received
+     * @param event the event type on which it should be called
+     * @param listener an instance of the MsgListener interface
+     */
     public void setOn(String event, MsgEventListener listener){
-        Util.notNull(event,listener);
         MsgListener msgListener = new MsgListener(event,listener);
         listeners.add(msgListener);
     }
 
+    /**
+     * Removes the specified listener
+     * @param listener the listener to remove
+     */
     public void removeListener(MsgEventListener listener){
         for (MsgListener msgListener : listeners) {
             if (msgListener.getEventListener() == listener){
@@ -89,14 +123,23 @@ public abstract class BaseConnection {
         }
     }
 
+    /**
+     * Removes all listeners
+     */
     public void removeAllListeners(){
         listeners.clear();
     }
 
+    /**
+     * @return returns the socket of this instance
+     */
     public Socket getSocket() {
         return socket;
     }
 
+    /**
+     * @return returns whether this socket is still running or has already been closed
+     */
     public boolean isRunning() {
         return running;
     }
