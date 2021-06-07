@@ -2,6 +2,20 @@
 
 This is a java library for simplifying the usage of Java sockets.
 
+
+# Build
+Run the following command in the root directory this will build all packages.
+
+The server jar will be located in server-wrapper/target/server-wrapper-{version}.jar
+
+The client jar will be located in client-wrapper/target/client-wrapper-{version}.jar
+
+
+```shell
+mvn install
+```
+
+
 # Usage
 ## Server
 
