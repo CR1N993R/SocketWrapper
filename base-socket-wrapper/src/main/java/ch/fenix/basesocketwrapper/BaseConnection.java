@@ -52,8 +52,12 @@ public abstract class BaseConnection {
         while (running){
             try {
                 String msg = reader.readLine();
-                String [] data = msg.split("\\|");
-                sendToListeners(data[0], data[1]);
+                if (msg != null) {
+                    String[] data = msg.split("\\|");
+                    sendToListeners(data[0], data[1]);
+                }else {
+                    disconnected();
+                }
             } catch (IOException e) {
                 disconnected();
             }
@@ -64,8 +68,10 @@ public abstract class BaseConnection {
      * This method is called when the socket is closed
      */
     protected void disconnected(){
-        running = false;
-        sendToListeners("disconnect", "");
+        if (running) {
+            running = false;
+            sendToListeners("disconnect", "");
+        }
     }
 
     /**
@@ -96,8 +102,8 @@ public abstract class BaseConnection {
      * @throws IOException The socket.close throws an exception
      */
     public void close() throws IOException {
-        socket.close();
         running = false;
+        socket.close();
     }
 
     /**
@@ -118,6 +124,19 @@ public abstract class BaseConnection {
         for (MsgListener msgListener : listeners) {
             if (msgListener.getEventListener() == listener){
                 listeners.remove(msgListener);
+                return;
+            }
+        }
+    }
+
+    /**
+     * Removes all Listeners which have this event
+     * @param event the event to remove
+     */
+    public void removeAllListenersByEvent(String event){
+        for (MsgListener listener : listeners) {
+            if (listener.getType().equals(event)){
+                listeners.remove(listener);
                 return;
             }
         }

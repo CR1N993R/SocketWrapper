@@ -25,9 +25,11 @@ public class Connection extends BaseConnection {
      */
     @Override
     protected void disconnected(){
-        running = false;
-        sendToListeners("disconnect", "");
-        disconnectListener.onDisconnect(this);
+        if (running) {
+            running = false;
+            sendToListeners("disconnect", "");
+            disconnectListener.onDisconnect(this);
+        }
     }
 
     /**
